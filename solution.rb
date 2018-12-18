@@ -12,5 +12,6 @@ post "/" do
 end
 
 get "/saluda" do
-    "<h1>Hola #{nombre}!</h1>"
+    @nombre = nombre
+    "<h1>Hola #{@nombre}!</h1>"
 end
